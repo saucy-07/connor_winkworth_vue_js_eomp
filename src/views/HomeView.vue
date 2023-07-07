@@ -33,7 +33,20 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeInAnimation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .first-div {
+  animation-name: fadeInAnimation2;
+  animation-delay: 0.6s;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
   border-radius: 1vw;
   display: flex;
   margin: 1vw;
@@ -83,5 +96,11 @@ p {
   margin: 0;
   font-size: 2vw;
 }
-
+.bottom-text {
+  animation-name: fadeInAnimation2;
+  animation-delay: 0.6s;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
 </style>

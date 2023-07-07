@@ -18,16 +18,6 @@
       </div>
     </div>
     </div>
-    <div class="testimonial-div">
-      <h3>Testimonials</h3>
-      <div class="card-div">
-        <div class="testi-parent-div" v-for="testi in Testimonials" :key="testi">
-        <div class="testi-card">
-          <div><img :src="testi.Card.image" :alt="image"></div>
-        </div>
-      </div>
-      </div>
-    </div>
     <div class="second-div">
       <div class="edu-work-div">
       <div class="edu-div">
@@ -84,7 +74,6 @@
 <script>
 import BasicInfoData from "../db.json";
 import BibliographyData from "../db.json";
-import TestimonialsData from "../db.json";
 import EducationData from "../db.json";
 import WorkExperienceData from "../db.json";
 import SkillsData from "../db.json";
@@ -94,7 +83,6 @@ export default {
     return {
       BasicInformation: BasicInfoData.BasicInformation,
       Bibliography: BibliographyData.Bibliography,
-      Testimonials: TestimonialsData.Testimonials,
       Education: EducationData.Education,
       WorkExperience: WorkExperienceData.WorkExperience,
       Skills: SkillsData.Skills,
@@ -129,28 +117,6 @@ export default {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.testimonial-div {
-  border-radius: 1vw;
-  margin: 1vw;
-  padding: 1vw;
-  background-color: #f0f0f0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.card-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.testi-card {
-  margin: 0.8vw;
-}
-.testi-card img {
-  border-radius: 1vw;
-  width: 17vw;
-  height: 17vw;
 }
 .second-div {
   display: flex;
