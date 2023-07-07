@@ -1,38 +1,39 @@
 <template>
   <NavBarComp/>
+  <router-view/>
+  <FooterComp/>
 </template>
 
 <script>
 import NavBarComp from './components/NavBarComp'
+import FooterComp from './components/FooterComp.vue'
 
 export default {
-  name: 'HomeView',
   components: {
     NavBarComp,
+    FooterComp,
   }
 
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
+  color: #000000;
+  background-color: #f9d949;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffffff;
 }
 </style>

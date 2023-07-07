@@ -1,0 +1,91 @@
+{
+    "BasicInformation": [
+        {
+            "firstName": "Connor",
+            "surname": "Winkworth",
+            "dateOfBirth": "2004/06/07",
+            "gender": "Male",
+            "adress": "South Africa, Western Cape, Cape Town, Grassy Park"
+        }
+    ],
+    "Bibliography": [
+        {
+            "text": "I would describe myself as an extroverted introvert. I enjoy being at home, playing games or watching thought provoking shows. At the same time however, I enjoy the company of other's and enjoy going out with them. I believe I'm quite a fun guy around the poeple I genuinely enjoy spending time with."
+        }
+    ],
+    "Testimonials": [
+        {
+            "Card": {
+                "name": "Liyabona Mxhalisa",
+                "cardText": "Connor is a highly intelligent and hardworking person who is also very calm and collected.",
+                "image": "https://i.postimg.cc/MGL2yJSf/Liyabona-1x1.jpg"
+            }
+        },
+        {   
+            "Card": {
+                "name": "Zubair Matthee",
+                "cardText": "Connor is a hard worker who is always eager to learn new things and share his knowledge with others.",
+                "image": "https://i.postimg.cc/fRF0pk7H/Zubair-1x1.jpg"
+            }
+        },
+        {
+            "Card": {
+                "name": "Marcel Brown",
+                "cardText": "Connor keeps to himself most of the time, but you'll be quick to find out that he is a kind yet confident person..",
+                "image": "https://i.postimg.cc/MT05z1dZ/Marcel-1x1.jpg"
+            }
+        },
+        {
+            "Card": {
+                "name": "Mufuniwa Mbedzi",
+                "cardText": "Connor is a young man that strives for greatness and not scared to face challenges that come his way. If he can't solve the problem, he is not shy to ask for help..",
+                "image": "https://i.postimg.cc/3wYWPp4F/Mufuniwa-1x1.jpg"
+            }
+        },
+        {
+            "Card": {
+                "name": "John Noad",
+                "cardText": "I highly recommend Connor for any web development projects. Their exceptional skills, dedication, and eagerness to learn are truly impressive. He have a eye for design, a deep understanding of programming languages, and an ability to solve complex problems efficiently. Their commitment to meeting deadlines and the work they put towards achieving their results is outstanding. Working with Connor was a pleasure, and I have no doubt that they will thrive in their future endeavors as a professional web developer. I wholeheartedly endorse them for any web development opportunities!",
+                "image": "https://i.postimg.cc/FFyFQ1vP/john-bruce-noad-portfolio-photo1by1.jpg"
+            }
+        }
+    ],
+    "Education": [
+        {
+            "frst": "Partaking a Web Design Course at Life Choices Academy.",
+            "scnd": "Matriculated with a Bachelor's Pass.",
+            "thrd": "Attended South Peninsula High School.",
+            "frth": "Attended Sid G. Rule Primary School."
+        }
+    ],
+    "WorkExperience": [
+        {
+            "text": "3 days of job shadowing at Amsol in the IT department."
+        }
+    ],
+    "Skills": [
+        {
+            "hardSkills": {
+                "htmlImg": "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png",
+                "githubImg": "https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png",
+                "cssImg": "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-opencode-css-8.png",
+                "bootstrapImg": "https://i.postimg.cc/zfBQ8PDS/pngwing-com-5.png"
+            },
+            "softSkills": {
+                "skillOne": "Efficient communication skills",
+                "skillTwo": "Fast learner",
+                "skillThree": "Adaptable to various conditions",
+                "skillFour": "Perform well under pressure"
+            }
+        }
+    ],
+    "Projects": [
+        {
+            "linkOne": "https://genuine-cheesecake-b3f714.netlify.app/",
+            "linkTwo": "https://github.com/saucy-07/HTML-and-CSS-Exercises",
+            "linkThree": "https://github.com/saucy-07/animation-activity",
+            "linkFour": "https://github.com/saucy-07/Table_Boys_and_Girls",
+            "linkFive": "https://github.com/saucy-07/bootstrap-exercise-01"
+        }
+    ]
+}
