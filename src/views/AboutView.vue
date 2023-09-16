@@ -1,25 +1,30 @@
 <template>
-    <div class="testimonial-div">
-      <h3>Testimonials</h3>
-      <div class="card-div">
-        <div class="testi-parent-div" v-for="testi in Testimonials" :key="testi">
+  <div class="testimonial-div">
+    <h3>Testimonials</h3>
+    <div class="card-div">
+      <div class="testi-parent-div" v-for="testi in Testimonials" :key="testi">
         <div class="testi-card">
-          <div><img :src="testi.Card.image" :alt="image"></div>
+          <div><img :src="testi.Card.image" :alt="image" /></div>
+          <div>
+            <h4>{{ testi.Card.name }}</h4>
+            <h4>{{ testi.Card.cardText }}</h4>
+          </div>
         </div>
       </div>
-      </div>
     </div>
+  </div>
 </template>
 <script>
-import TestimonialsData from "../db.json";
-
 export default {
-    data() {
-    return{
-        Testimonials: TestimonialsData.Testimonials,
-    }
-}
-}
+  computed: {
+    Testimonials() {
+      return this.$store.getters.getTestimonials;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("fetchTestimonials");
+  },
+};
 </script>
 <style scoped>
 .testimonial-div {
@@ -27,13 +32,13 @@ export default {
   margin: 1vw;
   padding: 1vw;
   background-color: #f0f0f0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .card-div {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 .testi-card {
