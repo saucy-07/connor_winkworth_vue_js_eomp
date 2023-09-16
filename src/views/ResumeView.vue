@@ -72,22 +72,35 @@
   </div>
 </template>
 <script>
-import BasicInfoData from "../db.json";
-import BibliographyData from "../db.json";
-import EducationData from "../db.json";
-import WorkExperienceData from "../db.json";
-import SkillsData from "../db.json";
-import ProjectsData from "../db.json";
+
 export default {
-  data() {
-    return {
-      BasicInformation: BasicInfoData.BasicInformation,
-      Bibliography: BibliographyData.Bibliography,
-      Education: EducationData.Education,
-      WorkExperience: WorkExperienceData.WorkExperience,
-      Skills: SkillsData.Skills,
-      Projects: ProjectsData.Projects
-    };
+  computed: {
+    BasicInformation() {
+      return this.$store.getters.getBasicInformation;
+    },
+    Bibliography() {
+      return this.$store.getters.getBibliography;
+    },
+    Education() {
+      return this.$store.getters.getEducation;
+    },
+    WorkExperience() {
+      return this.$store.getters.getWorkExperience;
+    },
+    Skills() {
+      return this.$store.getters.getSkills;
+    },
+    Projects() {
+      return this.$store.getters.getProjects;
+    },
+  },
+  mounted() {
+    this.$store.dispatch('fetchBasicInformation');
+    this.$store.dispatch('fetchBibliography');
+    this.$store.dispatch('fetchEducation');
+    this.$store.dispatch('fetchWorkExperience');
+    this.$store.dispatch('fetchSkills');
+    this.$store.dispatch('fetchProjects');
   },
 };
 </script>
